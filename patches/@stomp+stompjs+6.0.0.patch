@@ -1,0 +1,17 @@
+diff --git a/node_modules/@stomp/stompjs/bundles/stomp.umd.js b/node_modules/@stomp/stompjs/bundles/stomp.umd.js
+index f82b594..885dbf5 100644
+--- a/node_modules/@stomp/stompjs/bundles/stomp.umd.js
++++ b/node_modules/@stomp/stompjs/bundles/stomp.umd.js
+@@ -448,7 +448,11 @@ class Client {
+             webSocket = this.webSocketFactory();
+         }
+         else {
+-            webSocket = new WebSocket(this.brokerURL, this.stompVersions.protocolVersions());
++            webSocket = new WebSocket(
++                this.brokerURL,
++                this.stompVersions.protocolVersions(),
++                {headers: {'User-Agent': 'dubbz/app'}}
++            );
+         }
+         webSocket.binaryType = 'arraybuffer';
+         return webSocket;

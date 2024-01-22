@@ -1,0 +1,38 @@
+diff --git a/node_modules/react-native-canvas/dist/index.html b/node_modules/react-native-canvas/dist/index.html
+index 53b7711..8b17206 100644
+--- a/node_modules/react-native-canvas/dist/index.html
++++ b/node_modules/react-native-canvas/dist/index.html
+@@ -2,6 +2,14 @@
+   <head>
+     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scaleable=no' name='viewport'>
+     <style>
++      @font-face {
++          font-family: 'Quantico-Regular';
++          src: url('https://ik.imagekit.io/9hlfeszbk/static/common/Quantico-Regular.ttf');
++      }
++      @font-face {
++          font-family: 'Quantico-Bold';
++          src: url('https://ik.imagekit.io/9hlfeszbk/static/common/Quantico-Bold.ttf');
++      }
+       html {
+         -ms-content-zooming: none;
+         -ms-touch-action: pan-x pan-y;
+diff --git a/node_modules/react-native-canvas/dist/index.html.js b/node_modules/react-native-canvas/dist/index.html.js
+index 86eadfb..659fa83 100644
+--- a/node_modules/react-native-canvas/dist/index.html.js
++++ b/node_modules/react-native-canvas/dist/index.html.js
+@@ -1,6 +1,14 @@
+ export default `<html><head>
+     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scaleable=no" name="viewport">
+     <style>
++      @font-face {
++          font-family: 'Quantico-Regular';
++          src: url('https://ik.imagekit.io/9hlfeszbk/static/common/Quantico-Regular.ttf');
++      }
++      @font-face {
++          font-family: 'Quantico-Bold';
++          src: url('https://ik.imagekit.io/9hlfeszbk/static/common/Quantico-Bold.ttf');
++      }
+       html {
+         -ms-content-zooming: none;
+         -ms-touch-action: pan-x pan-y;

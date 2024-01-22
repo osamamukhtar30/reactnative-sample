@@ -1,0 +1,13 @@
+diff --git a/node_modules/@walletconnect/core/dist/esm/index.js b/node_modules/@walletconnect/core/dist/esm/index.js
+index a66eece..68884d6 100644
+--- a/node_modules/@walletconnect/core/dist/esm/index.js
++++ b/node_modules/@walletconnect/core/dist/esm/index.js
+@@ -480,7 +480,7 @@ class Connector {
+             throw new Error("Session currently disconnected");
+         }
+         const request = this._formatRequest({
+-            method: "wallet_updateChain",
++            method: "wallet_addEthereumChain",
+             params: [chainParams],
+         });
+         const result = await this._sendCallRequest(request);

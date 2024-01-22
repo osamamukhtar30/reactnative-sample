@@ -1,0 +1,35 @@
+diff --git a/node_modules/react-native-swipeout/dist/index.js b/node_modules/react-native-swipeout/dist/index.js
+index d4a976c..cd759c8 100644
+--- a/node_modules/react-native-swipeout/dist/index.js
++++ b/node_modules/react-native-swipeout/dist/index.js
+@@ -154,7 +154,7 @@ var Swipeout = (0, _createReactClass2.default)({
+     };
+   },
+ 
+-  componentWillMount: function componentWillMount() {
++  UNSAFE_componentWillMount: function UNSAFE_componentWillMount() {
+     var _this = this;
+ 
+     this._panResponder = _reactNative.PanResponder.create({
+@@ -180,7 +180,7 @@ var Swipeout = (0, _createReactClass2.default)({
+     });
+   },
+ 
+-  componentWillReceiveProps: function componentWillReceiveProps(nextProps) {
++  UNSAFE_componentWillReceiveProps: function UNSAFE_componentWillReceiveProps(nextProps) {
+     if (nextProps.close) this._close();
+     if (nextProps.openRight) this._openRight();
+     if (nextProps.openLeft) this._openLeft();
+diff --git a/node_modules/react-native-swipeout/src/index.js b/node_modules/react-native-swipeout/src/index.js
+index 749a209..f2d1864 100644
+--- a/node_modules/react-native-swipeout/src/index.js
++++ b/node_modules/react-native-swipeout/src/index.js
+@@ -137,7 +137,7 @@ const Swipeout = createReactClass({
+     };
+   },
+ 
+-  componentWillMount: function () {
++  UNSAFE_componentWillMount: function () {
+     this._panResponder = PanResponder.create({
+       onStartShouldSetPanResponder: (event, gestureState) => true,
+       onStartShouldSetPanResponderCapture: (event, gestureState) =>
